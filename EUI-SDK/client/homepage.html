@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form class="eds-form">
+    <div class="form-header">
+        <div class="title">Form title</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="row form-body">
+        <div class="column sm-12 md-12 lg-6">
+
+            <div class="form-group">
+                <div class="form-group-title">Group 1</div>
+                <p>Short explanation.</p>
+
+                <div class="form-element">
+                    <label for="input-1">
+                        Text input
+                        <span class="tooltip">
+              <i class="icon icon-info"></i>
+              <span class="message top">Tooltip on the top, with a very long message.</span>
+            </span>
+                    </label>
+                    <input type="text" id="input-1" placeholder="Placeholder">
+                </div>
+
+                <div class="form-element">
+                    <label for="input-2">A long label can occupy two lines and at most be 320 px of width. </label>
+                    <input type="text" id="input-2" placeholder="Placeholder">
+                </div>
+
+                <div class="form-element">
+                    <label for="ns1">Number input</label>
+                    <input type="number" value="0" id="ns1">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-group-title">Group 2</div>
+
+                <div class="form-element">
+                    <label>
+                        Radio buttons
+                        <span class="tooltip">
+              <i class="icon icon-info"></i>
+              <span class="message top">Tooltip on the top, with a very long message.</span>
+            </span>
+                    </label>
+
+                    <div>
+                        <input id="rbtn1" name="group1" type="radio" checked>
+                        <label for="rbtn1">Option 1</label>
+
+                        <input id="rbtn2" name="group1" type="radio">
+                        <label for="rbtn2">Option 2</label>
+
+                        <input id="rbtn3" name="group1" type="radio">
+                        <label for="rbtn3">Option 3</label>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <label for="ta-1">Text area (optional)</label>
+                    <textarea id="ta-1" placeholder="Placeholder"></textarea>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="column sm-12 md-12 lg-6">
+            <div class="form-group">
+                <div class="form-element">
+                    <label for="sl-1">Selects</label>
+                    <div class="select" data-type="single" id="sl-1">
+                        <button type="button" class="btn current-options">Select option</button>
+
+                        <div class="options-list">
+                            <div class="item">Option 1</div>
+                            <div class="item">Option 2</div>
+                            <div class="item">Option 3</div>
+                            <div class="item">Option 4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <label for="rs-1">Range slider</label>
+                    <input id="rs-1" class="range" type="range" min="-10" max="10" step="1" />
+                </div>
+
+                <div class="form-element">
+                    <label for="tp-1">Time picker</label>
+                    <div id="tp-1" class="time-picker" type="separate" format="12" step="10"></div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="form-group-title">Group 3</div>
+
+                <div class="form-element">
+                    <label>Check boxes</label>
+                    <div>
+                        <input type="checkbox" id="cb1" checked>
+                        <label for="cb1">Option 1</label>
+
+                        <input type="checkbox" id="cb2">
+                        <label for="cb2">Option 2</label>
+
+                        <input type="checkbox" id="cb3">
+                        <label for="cb3">Option 3</label>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <label for="input-3">Text input</label>
+                    <input type="password" id="input-3" placeholder="Placeholder">
+                </div>
+
+                <div class="form-element">
+                    <label for="input-4">Text input</label>
+                    <input type="password" id="input-4" placeholder="Placeholder">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="form-footer">
+        <button type="button" class="btn">Action</button>
+        <button type="submit" class="btn primary">Send</button>
+    </div>
+
+</form>
+</body>
+</html>

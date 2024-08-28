@@ -1,0 +1,8 @@
+{
+  "script":"template/Template",
+  "id":"Template",
+  "data": {},
+  "dependencies":{
+    "@eui/component":"0.10.x"
+  }
+}

@@ -1,0 +1,42 @@
+version: '3'
+services:
+ database:
+  image: 'mongo:3.2'
+  container_name: 'cloud-maturity-database'
+  command: mongod --port 27019
+  environment:
+   - MONGO_INITDB_DATABASE=cloud-maturity
+  volumes:
+   - ./mongo-volume:/data/db
+  ports:
+   - 27019:27019
+  networks:
+   - cm-network
+ database-microservice:
+  build: spring-boot/database
+  container_name: 'cloud-maturity-database-microservice'
+  ports:
+   - 9090:9090
+  networks:
+   - cm-network
+  links:
+   - database:mongo
+ answer-processing-microservice:
+  build: spring-boot/answer-processing
+  container_name: 'cloud-maturity-answer-processing'
+  ports:
+   - 9091:9091
+  networks:
+   - cm-network
+  links:
+   - database-microservice:spring-boot/database
+ question-fetching-microservice:
+  build: spring-boot/question-fetching
+  container_name: 'cloud-maturity-question-fetching'
+  ports:
+   - 9092:9092
+  networks:
+   - cm-network
+networks:
+ cm-network:
+  driver: bridge  

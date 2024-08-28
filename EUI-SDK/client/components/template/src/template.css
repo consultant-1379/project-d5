@@ -1,0 +1,50 @@
+
+:host {
+    display: block;
+}
+.defs {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+/* compiled css from EDS less specification */
+.bar-chart .bar-group .bar {
+    stroke: var(--hover-text);
+}
+.bar-chart .bar-group .bar.active {
+    opacity: 1;
+}
+.bar-chart .bar-group .bar.inactive {
+    opacity: .2;
+}
+.bar-chart .bar-group .bar.green {
+    stroke: var(--green);
+}
+.bar-chart .bar-group .bar.yellow {
+    stroke: var(--yellow);
+}
+.bar-chart .bar-group .bar.orange {
+    stroke: var(--orange);
+}
+.bar-chart .bar-group .bar.red {
+    stroke: var(--red);
+}
+.bar-chart .bar-group .label {
+    display: block;
+    fill: var(--hover-text);
+}
+.bar-chart .bar-group .label.value {
+    font-weight: var(--weight-bold);
+}
+.bar-chart .bar-group .label.active {
+    opacity: 1;
+}
+.bar-chart .bar-group .label.inactive {
+    opacity: .2;
+}
+.bar-chart .bar-group .label.hidden {
+    opacity: 0;
+}
+.bar-chart .bar-group .label.visible {
+    opacity: 1;
+}

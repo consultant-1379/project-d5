@@ -1,0 +1,24 @@
+{
+  "script": "question-app/QuestionApp",
+  "title": "QUESTION_APP",
+  "route": "question-app",
+  "localePath": "locale/",
+  "menu": {
+    "id": "QUESTION_APP",
+    "data": {
+      "path": "question-app"
+    }
+  },
+  "dependencies": {
+    "@eui/component": "0.10.x",
+    "@eui/lit-component": "0.12.x",
+    "@eui/app": "0.12.x"
+  },
+  "components": {
+
+  "lit-demo": "0.0.0",
+    "dialogs-component": "0.0.0"
+
+  },
+  "subtitle": "SUBTITLE_QUESTION_APP"
+}

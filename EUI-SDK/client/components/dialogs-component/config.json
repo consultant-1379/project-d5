@@ -1,0 +1,8 @@
+{
+  "script":"dialogs-component/DialogsComponent",
+  "id":"DialogsComponent",
+  "data": {},
+  "dependencies":{
+    "@eui/lit-component":"0.12.x"
+  }
+}

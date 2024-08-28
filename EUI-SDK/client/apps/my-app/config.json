@@ -1,0 +1,24 @@
+{
+  "script": "my-app/MyApp",
+  "title": "MY_APP",
+  "route": "my-app",
+  "localePath": "locale/",
+  "menu": {
+    "id": "MY_APP",
+    "data": {
+      "path": "my-app"
+    }
+  },
+  "dependencies": {
+    "@eui/component": "0.10.x",
+    "@eui/lit-component": "0.12.x",
+    "@eui/app": "0.12.x",
+    "@eui/layout": "0.10.x"
+  },
+  "components": {
+    "lit-demo":"0.0.0",
+    "chart-legend": "0.0.0",
+    "histogram-chart": "0.0.0"
+  },
+  "subtitle": "Home page"
+}
